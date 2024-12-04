@@ -9,6 +9,8 @@ import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.
 import { FiltersComponent } from './components/shopping-cart/filters/filters.component';
 import { ProductListComponent } from './components/shopping-cart/product-list/product-list.component';
 import { CartComponent } from './components/shopping-cart/cart/cart.component';
+import { CartItemComponent } from './components/shopping-cart/cart/cart-item/cart-item.component';
+import { ProductItemComponent } from './components/shopping-cart/product-list/product-item/product-item.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { CartComponent } from './components/shopping-cart/cart/cart.component';
     FiltersComponent,
     ProductListComponent,
     CartComponent,
+    CartItemComponent,
+    ProductItemComponent,
   ],
   imports: [
     BrowserModule

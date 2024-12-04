@@ -1,1 +1,6 @@
-<p>product-list works!</p>
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <!-- *ngFor="let i of [1,2,3,4,5,6]" -->
+    <div class="col-md-4" *ngFor="let product of productList">
+     <app-product-item [productItem]="product"></app-product-item>
+    </div>
+</div>

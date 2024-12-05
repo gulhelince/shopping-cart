@@ -25,11 +25,12 @@
     </h5>
 
     <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-      <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Features</a>
+      <a class="me-3 py-2 link-body-emphasis text-decoration-none" [routerLink]="['/shop']">Shop</a>
       <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Enterprise</a>
       <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Support</a>
       <a class="py-2 link-body-emphasis text-decoration-none p-3" href="#">Pricing</a>
     </nav>
 
-    <a class="btn btn-outline-primary" href="#">Sign up</a>
+    <a class="btn btn-primary" [routerLink]="['/register']">Sign up</a>
+    <a class="btn btn-outline-secondary" [routerLink]="['/login']">Login</a>
   </div>

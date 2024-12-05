@@ -4,8 +4,10 @@
     <div class="card-body">
         <P class="card-text">
             <strong>{{productItem.price | currency:'INR' }}</strong>
+            <i *ngIf="addedToWishlist" class="fas fa-heart float-end" (click)="handleRemoveFromWishlist()"></i>
+            <i *ngIf="!addedToWishlist" class="far fa-heart float-end" (click)="handleAddToWishlist()"></i>
         </P>
-      <p class="card-text">{{productItem.description}}</p>
+      <p class="card-text">{{productItem.description | slice:0:80}}...</p>
       <div class="d-flex justify-content-between align-items-center">
         <div class="btn-group">
           <button type="button" class="btn btn-sm btn-primary product-btn" 
